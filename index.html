@@ -72,11 +72,12 @@
         baseUrl = "bluesky://intent/compose";
       }
 
-      const text = "carp https://carp-ebooks.com #carp";
+      const text = "carp https://carp-ebooks.com #carp (remove this text to make the carp unfurl)";
       const escapedText = encodeURIComponent(text);
 
       document.getElementById("skeet-button").onclick = () => {
-        window.location = `${baseUrl}?text=${escapedText}`;
+        let url = `${baseUrl}?text=${escapedText}`;
+        window.location = url;
       };
     </script>
   </body>
