@@ -1,4 +1,4 @@
-# carp-eboooks
+# carp-ebooks
 
 How to make your own
 
