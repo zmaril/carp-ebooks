@@ -72,11 +72,7 @@
         baseUrl = "bluesky://intent/compose";
       }
 
-      let text = "carp https://en.wikipedia.org/wiki/Carp #carp";
-      if (Math.random() < 0.5) {
-        //relink back to carp-ebooks.com instead of the wikipedia page
-        text = "carp https://carp-ebooks.com #carp";
-      }
+      const text = "carp https://carp-ebooks.com #carp";
       const escapedText = encodeURIComponent(text);
 
       document.getElementById("skeet-button").onclick = () => {
