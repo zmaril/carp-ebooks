@@ -21,7 +21,7 @@
                 <img src="carp.jpg" alt="carp" class="img-fluid">
                 <p></p>
                 <div class="d-grid">
-                    <button class="btn btn-outline-primary" id="skeet-button"><a id = "skeet-link" href=""> Skeet #carp</a></button>
+                    <button class="btn btn-outline-primary" id="skeet-button"> Skeet #carp</button>
                 </div>
             </div>
             <div class="card-footer">
@@ -40,7 +40,9 @@
         }
         const escapedText = encodeURIComponent(text);
 
-        document.getElementById("skeet-link").setAttribute("href", `${baseUrl}?text=${escapedText}`);
+        document.getElementById("skeet-button").onclick = () => {
+            window.location.href = `${baseUrl}?text=${escapedText}`;
+        };
     </script>
 </body>
 </html>
