@@ -77,7 +77,7 @@
       const escapedText = encodeURIComponent(text);
 
       document.getElementById("skeet-button").onclick = () => {
-        window.location.href = `${baseUrl}?text=${escapedText}`;
+        window.location = `${baseUrl}?text=${escapedText}`;
       };
     </script>
   </body>
